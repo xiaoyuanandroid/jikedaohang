@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客导航-程序员自己的导航
+    </title>
+    <meta name="keywords" content="极客导航ˇ极客网址导航,极客,导航,程序员,码农,开发,程序员上网,程序导航,程序员导航大全,极客程序猿上网导航网址大全
+"/>
+    <meta name="description" content="极客导航ˇ极客网址导航,极客,导航,程序员,码农,开发,程序员上网,程序导航,程序员导航大全,极客程序猿上网导航网址大全
+"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/metro.css">
+    <script type="text/javascript" src="script/jquery-1.12.3.min.js"></script>
+    <!--解决在ie6下png透明-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="script/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('ul,li,img');
+    </script>
+
+    <![endif]-->
+    <!--<script type="text/javascript" src="script/jquery.carousel.min.js"></script>-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $ = jQuery;
+            $('body').height($(document).height());
+            var box_h = $("#metro_box").height();
+            var box_w = $("#metro_box").width();
+            $("#metro_box").css("margin-top", (($(window).height() - box_h) / 2) - 10 + "px");
+            //var img_h=$(".arr_left img").height();
+            //var img_w=$(".arr_left img").width();
+            //$(".prev").css("position","absolute").css("left","10px").css("top",($(window).height()-img_h)/2);
+            //$(".next").css("position","absolute").css("right","10px").css("top",($(window).height()-img_h)/2);
+            //链接在新窗口打开
+            $(".a_link dd a").attr("target", "_blank");
+            $(".a_link ul li>a").hover(function () {
+                var a_href = $(this).attr("href");
+                $(this).siblings().find("a").attr("href", a_href);
+            });
+
+            //切屏-----------------------------------------------------------------
+            $("#top dl dd a").click(function () {
+                var now_class = $(this).attr("class");
+                $("#top dl dd a.a_index").attr("class", "a_index");
+                $("#top dl dd a.a_mzdw").attr("class", "a_mzdw");
+                $("#top dl dd a.a_spyy").attr("class", "a_spyy");
+                $("#top dl dd a.a_xwzx").attr("class", "a_xwzx");
+                $("#top dl dd a.a_gwtb").attr("class", "a_gwtb");
+                $("#top dl dd a.a_yxyl").attr("class", "a_yxyl");
+                $("#top dl dd a.a_sygj").attr("class", "a_sygj");
+                $("#top dl dd a.a_yszy").attr("class", "a_yszy");
+                $("#top dl dd a.a_more").attr("class", "a_more");
+                $(this).attr("class", now_class).addClass(now_class + "_h");
+                var index = $(this).index();
+                $("#metro_box dd").hide();
+                $("#metro_box dd").eq(index).toggle(200);
+                if (index == 1) {
+                    $("body").attr("class", "bg0");
+                }
+                switch (index) {
+                    case 0:
+                        $("body").attr("class", "");
+                        break;
+                    case 1:
+                        $("body").attr("class", "bg0");
+                        break;
+                    case 2:
+                        $("body").attr("class", "bg1");
+                        break;
+                    case 3:
+                        $("body").attr("class", "bg2");
+                        break;
+                    case 4:
+                        $("body").attr("class", "bg3");
+                        break;
+                    case 5:
+                        $("body").attr("class", "bg4");
+                        break;
+                    case 6:
+                        $("body").attr("class", "bg5");
+                        break;
+                    default :
+                        $("body").attr("class", "bg6");
+                }
+                ///
+
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript" src="script/base.js">
+    </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?af56dfbc035c657de3388b6e9dde0d51";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head>
+
+
+<body>
+
+<!--头部导航开始-->
+<div id="top">
+    <dl>
+        <dt><a href="" target="_blank">极客导航</a></dt>
+        <dd>
+            <a class="a_index " href="" target="_self">首页</a>
+            <a class="a_mzdw a_mzdw_h">常用网站</a>
+            <a class="a_spyy">经典博客</a>
+            <a class="a_xwzx">工具大全</a>
+            <a class="a_gwtb">进阶之路</a>
+            <a class="a_yxyl">音乐视频</a>
+            <a class="a_sygj">跳槽恋爱</a>
+            <a class="a_yszy">创业社区</a>
+            <a class="a_more">其他</a>
+            </dd>
+    </dl>
+</div>
+
+<!--<div  id="container">-->
+    <!--<form id="search_form">-->
+        <!--<div   align="center" >-->
+            <!--<input class="input" type=text name=word size=30 id="search_input">-->
+                <!--<br>-->
+            <!--<input   class="sumit" id="baidu_submit" type="button" value="百度搜索"  >-->
+            <!--<input   class="sumit" id="google_submit" type="button" value="谷歌搜索"  ></div>-->
+    <!--</form>-->
+<!--</div>-->
+
+
+
+<div style="margin:0 auto; width:680px; margin-top: -60px"><div  style="padding-top:30; padding-bottom:80px; padding-left:220px"><a id="sf_label" class="pic fl" href="http://www.baidu.com/" target="_blank">
+    <img  style="display: none" src="" height="70"  />
+</a></div>
+
+
+    <div class="m-search" block="search">
+        <ul id="sm_tab" class="m-search-tab cf">
+            <li class="active" rel="gg">
+                谷歌
+            </li>
+            <li rel="bd" class="">
+                百度
+            </li>
+            <li rel="computer" class="">
+                必应
+            </li>
+            <li rel="mp3" class="">
+                音乐
+            </li>
+            <li rel="image" class="">
+                图片
+            </li>
+            <li rel="zhidao" class="">
+                知道
+            </li>
+            <li rel="ditu" class="">
+                地图
+            </li>
+            <li rel="taobao" class="">
+                淘宝
+            </li>
+        </ul>
+        <div class="cf m-search-con" id="sb">
+            <div id="sf" class="fl search-widget">
+                <form target="_blank" method="get" action="https://www.google.com/search?q="
+                      id="searchForm">
+
+                    <div class="box-search-input fl">
+
+                        <input type="text"  placeholder="请输入内容(翻墙工具在下面)" autocomplete="off" class="searchWord" name="q" baidusug="1"/>
+                        <input type="hidden"/>
+                        <div style="display:none;">
+                            <b class='overArw'>
+                            </b>
+                            <b class='nnum' id="nums">
+                                3
+                            </b>
+                        </div>
+                    </div>
+                            <span style="background: #2a82cc">
+
+                                <input type="submit" value="谷歌搜索" class="searchSubmit fl" hidefocus="true"/>
+                            </span>
+                </form>
+            </div>
+            <div style="display:none;" id="suggest" class="sug-wrap">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script/main.js">
+</script>
+
+
+
+
+
+
+
+<!--头部导航结束-->
+<!--logo区开始-->
+<div id="metro_box" class="a_link" >
+
+    <dl>
+        <dd style="display:none;"></dd>
+        <dd style="display:bolck;">
+            <!--常用导航-->
+            <ul>
+                <li class="one" id="logo_001"><a href="https://www.google.com/"><img src="images/logo_001.png"
+                                                                                      width="240" height="120"
+                                                                                      alt="google"></a><span><a
+                        href="#">谷歌</a></span></li>
+                <li id="logo_002"><a href="http://www.baidu.com/"><img src="images/logo_baidu.png" width="240"
+                                                                       height="120" alt=""></a><span><a href="#">百度</a></span>
+                </li>
+                <li id="logo_003"><a href="http://www.github.com"><img src="images/logo_003.png" width="240" height="120"
+                                                                      alt=""></a><span><a href="#">github</a></span></li>
+                <li class="four" id="logo_004"><a href="http://stackoverflow.com/"><img src="images/logo_004.png" width="240"
+                                                                               height="120" alt=""></a><span><a
+                        href="#">stackoverflow</a></span></li>
+                <li class="one" id="logo_005"><a href="http://developer.android.com/"><img src="images/logo_005.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="#">developer</a></span></li>
+                <li id="logo_006"><a href="http://www.csdn.net/"><img src="images/logo_006.png" width="239" height="120"
+                                                                   alt=""></a><span><a href="#">CSDN</a></span></li>
+                <li id="logo_007"><a href="http://www.oschina.net/"><img src="images/logo_007.png" width="240" height="120"
+                                                                      alt=""></a><span><a href="#">开源中国</a></span></li>
+                <li class="four" id="logo_008"><a href="https://segmentfault.com/"><img src="images/logo_008.png"
+                                                                                      width="240" height="120"
+                                                                                      alt=""></a><span><a
+                        href="#">segmentfault</a></span></li>
+                <li class="one" id="logo_009"><a href="http://blog.csdn.net/guolin_blog"><img src="images/logo_004d.png"
+                                                                                             width="240" height="120"
+                                                                                             alt=""></a><span><a
+                        href="#">郭霖</a></span></li>
+                <li id="logo_010"><a href="http://blog.csdn.net/lmj623565791"><img src="images/logo_009.png" width="240" height="120"
+                                                                      alt=""></a><span><a href="#">鸿洋</a></span></li>
+                <li id="logo_011"><a href="http://www.lcode.org/"><img src="images/logo_005b.png" width="240"
+                                                                       height="120" alt=""></a><span><a href="#">江清清</a></span>
+                </li>
+                <li class="four" id="logo_012"><a href="http://www.jcodecraeer.com/"><img src="images/logo_paozaiwangshangderizi.png" width="240"
+                                                                                   height="120" alt=""></a><span><a
+                        href="#">泡在网上的日子</a></span></li>
+                <li class="one" id="logo_013"><a href="http://www.iconfont.cn/"><img src="images/logo_tuku.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="#">图库</a></span></li>
+                <li id="logo_014"><a href="http://tel.exmail.qq.com/login"><img src="images/logo_qq.png" width="240" height="120"
+                                                                   alt=""></a><span><a href="#">腾讯企业邮</a></span></li>
+                <li id="logo_015"><a href="http://www.bejson.com/"><img src="images/logo_015.png" width="240" height="120"
+                                                                     alt=""></a><span><a href="#">BeJson</a></span></li>
+                <li class="four" id="logo_016"><a href="http://www.atool.org/colorpicker.php"><img src="images/logo_016.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="#">颜色在线</a></span></li>
+            </ul>
+        </dd>
+
+        <dd style="display:none;">
+            <!--经典博客-->
+            <ul>
+                <li class="one" id="logo_001"><a href="http://blog.csdn.net/guolin_blog"><img src="images/logo_004d.png" width="240"
+                                                                                  height="120" alt="youku"></a><span><a
+                        href="#">郭霖</a></span></li>
+                <li id="logo_002"><a href="http://blog.csdn.net/lmj623565791"><img src="images/logo_009.png" width="240"
+                                                                      height="120" alt="qiyi"></a><span><a
+                        href="#">鸿洋</a></span></li>
+                <li id="logo_003"><a href="http://blog.csdn.net/aigestudio"><img src="images/logo_011.png" width="240"
+                                                                      height="120" alt=""></a><span><a href="#">爱哥</a></span>
+                </li>
+                <li class="four" id="logo_004"><a href="http://www.cnblogs.com/over140/"><img src="images/logo_012.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="http://www.cnblogs.com/over140/">农民伯伯</a></span></li>
+                <li class="one" id="logo_005"><a href="http://www.lcode.org/"><img src="images/logo_005b.png" width="240"
+                                                                                height="120" alt=""></a><span><a
+                        href="http://www.lcode.org/">江清清</a></span></li>
+
+                <li id="logo_006"><a href="http://blog.csdn.net/jiangwei0910410003"><img src="images/logo_006b.png" width="240" height="120"
+                                                                    alt=""></a><span><a href="#">赵四</a></span></li>
+                <li id="logo_007"><a href="http://blog.csdn.net/eclipsexys/"><img src="images/logo_007b.png" width="240" height="120"
+                                                                   alt=""></a><span><a href="#">徐宜生</a></span></li>
+                <li class="four" id="logo_008"><a href="http://blog.csdn.net/bboyfeiyu"><img src="images/logo_008b.png" width="240"
+                                                                              height="120" alt=""></a><span><a
+                        href="http://blog.csdn.net/bboyfeiyu">MrSimp1e</a></span></li>
+                <li class="one" id="logo_009"><a href="http://blog.csdn.net/singwhatiwanna"><img src="images/logo_009b.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="http://blog.csdn.net/singwhatiwanna">任玉刚</a></span></li>
+                <li id="logo_010"><a href="http://blog.csdn.net/xyz_lmn/"><img src="images/logo_010b.png" width="240" height="120"
+                                                                     alt=""></a><span><a href="#">张兴业</a></span></li>
+                <li id="logo_011"><a href="http://blog.csdn.net/hellogv"><img src="images/logo_011b.png" width="240"
+                                                                             height="120" alt=""></a><span><a href="#">咪当系欧巴</a></span>
+                </li>
+                <li class="four" id="logo_012"><a href="http://blog.csdn.net/wwj_748"><img src="images/logo_012b.png"
+                                                                                       width="240" height="120" alt=""></a><span><a
+                        href="http://blog.csdn.net/wwj_748">小巫</a></span></li>
+                <li class="one" id="logo_013"><a href="http://www.trinea.cn/"><img src="images/logo_013b.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="http://www.trinea.cn/">Trinea</a></span></li>
+                <li id="logo_014"><a href="http://blog.csdn.net/wangyaninglm"><img src="images/logo_gaoduan.png" width="240"
+                                                                      height="120" alt=""></a><span><a href="#">高端技术</a></span>
+                </li>
+                <li id="logo_015"><a href="http://blog.csdn.net/foruok"><img src="images/logo_015b.png" width="240"
+                                                                         height="120" alt=""></a><span><a
+                        href="#">foruok</a></span></li>
+                <li class="four" id="logo_016"><a href="http://blog.csdn.net/xiaanming"><img src="images/logo_xiaanming.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="http://blog.csdn.net/xiaanming">夏安明</a></span></li>
+
+            </ul>
+        </dd>
+
+
+        <dd style="display:none;">
+            <!--常用工具-->
+            <ul>
+                <li class="one" id="logo_001"><a href="http://www.bejson.com/"><img src="images/logo_015.png"
+                                                                                    width="240" height="120"
+                                                                                    alt="taobao"></a><span><a
+                        href="http://www.bejson.com/">BeJson</a></span></li>
+                <li id="logo_002"><a href="http://tool.chinaz.com/Tools/unixtime.aspx"><img src="images/logo_002a.png" width="240" height="120"
+                                                                                            alt="时间在线"></a><span><a
+                        href="http://tool.chinaz.com/Tools/unixtime.aspx">时间在线</a></span></li>
+                <li id="logo_003"><a href="http://tool.lu/regex/"><img src="images/logo_003a.png" width="240"
+                                                                       height="120" alt=""></a><span><a
+                        href="http://tool.lu/regex/">正则在线</a></span></li>
+                <li class="four" id="logo_004"><a href="http://www.ip138.com/"><img src="images/logo_004a.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="#">IP在线</a></span></li>
+                <li class="one" id="logo_005"><a href="http://tool.oschina.net/hexconvert"><img src="images/logo_005a.png" width="240"
+                                                                                                height="120" alt=""></a><span><a
+                        href="http://tool.oschina.net/hexconvert">进制在线</a></span></li>
+                <li id="logo_006"><a href="http://tool.lu/coderunner/"><img src="images/logo_006a.png" width="240"
+                                                                            height="120" alt=""></a><span><a
+                        href="http://tool.lu/coderunner/">代码在线</a></span></li>
+                <li id="logo_007"><a href="http://tool.lu/sql/"><img src="images/logo_007a.png" width="240" height="120"
+                                                                     alt=""></a><span><a
+                        href="http://tool.lu/sql/">sql在线</a></span></li>
+                <li class="four" id="logo_008"><a href="http://tool.lu/base64image/"><img src="images/logo_008a.png"
+                                                                                          width="240" height="120"
+                                                                                          alt=""></a><span><a
+                        href="http://tool.lu/base64image/">Base64在线</a></span></li>
+                <li class="one" id="logo_009"><a href="http://fanyi.baidu.com/?aldtype=16047#auto/zh/"><img src="images/logo_009a.png"
+                                                                                                            width="240" height="120" alt=""></a><span><a
+                        href="http://fanyi.baidu.com/?aldtype=16047#auto/zh">翻译在线</a></span></li>
+                <li id="logo_010"><a href="http://tool.oschina.net/apidocs/apidoc?api=jdk_7u4"><img src="images/logo_010a.png" width="240"
+                                                                                                    height="120" alt=""></a><span><a
+                        href="http://tool.oschina.net/apidocs/apidoc?api=jdk_7u4">jdk在线</a></span></li>
+                <li id="logo_011"><a
+                        href="http://tool.lu/js/"><img
+                        src="images/logo_011a.png" width="240" height="120" alt=""></a><span><a
+                        href="#">JS在线</a></span></li>
+                <li class="four" id="logo_012"><a href="http://tool.lu/appicon/"><img src="images/logo_012a.png"
+                                                                                      width="240" height="120"
+                                                                                      alt=""></a><span><a
+                        href="http://tool.lu/appicon/">Icon在线</a></span></li>
+                <li class="one" id="logo_013a"><a href="http://tool.lu/head/"><img src="images/logo_013a.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a
+                        href="http://tool.lu/head/">网页在线</a></span></li>
+                <li id="logo_003"><a href="http://www.androiddevtools.cn/"><img src="images/logo_014a.png" width="240"
+                                                                          height="120" alt=""></a><span><a
+                        href="http://androiddevtools.cn/">开发工具</a></span></li>
+                <li id="logo_015a"><a
+                        href="http://tel.exmail.qq.com/login"><img
+                        src="images/logo_qq.png" width="240" height="120" alt=""></a><span><a href="#">腾讯企业邮箱</a></span>
+                </li>
+                <li class="four" id="logo_007"><a href="https://mail.google.com/mail/"><img src="images/logo_016a.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="https://mail.google.com/mail/">Gmail</a></span></li>
+            </ul>
+        </dd>
+
+        <dd style="display:none;">
+            <!--进阶之路-->
+            <ul>
+                <li class="one" id="logo_001"><a href="http://www.imooc.com/"><img src="images/logo_001c.png"
+                                                                                   width="240" height="120" alt="baidu"></a><span><a
+                        href="http://www.imooc.com/">幕客网</a></span></li>
+                <li id="logo_002"><a href="http://www.jikexueyuan.com/"><img src="images/logo_002c.png" width="240"
+                                                                      height="120" alt="sohu"></a><span><a
+                        href="http://www.jikexueyuan.com/">极客学院</a></span></li>
+                <li id="logo_003"><a href="https://ke.qq.com/course/list?mt=1001"><img src="images/logo_003c.png" width="240"
+                                                                          height="120" alt=""></a><span><a
+                        href="https://ke.qq.com/course/list?mt=1001">腾讯课堂</a></span></li>
+                <li class="four" id="logo_004"><a href="http://study.163.com/find.htm#/courselist?ct=9"><img src="images/logo_004c.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="http://study.163.com/find.htm#/courselist?ct=9">网易云课堂</a></span></li>
+                <li class="one" id="logo_005"><a href="http://mooc.guokr.com/career/?dept_id=93&order=hot"><img src="images/logo_005c.png"
+                                                                                     width="240" height="120"
+                                                                                     alt=""></a><span><a
+                        href="http://mooc.guokr.com/career/?dept_id=93&order=hot">mooc学院</a></span></li>
+                <li id="logo_006"><a href="http://product.dangdang.com/23521220.html"><img src="images/logo_006c.png" width="240"
+                                                                      height="120" alt=""></a><span><a
+                        href="http://product.dangdang.com/23521220.html">第一行代码</a></span></li>
+                <li id="logo_007"><a href="http://product.dangdang.com/23802445.html"><img src="images/logo_007c.png" width="240"
+                                                                        height="120" alt=""></a><span><a
+                        href="http://product.dangdang.com/23802445.html">Android设计模式</a></span></li>
+                <li class="four" id="logo_008"><a href="http://product.dangdang.com/23764636.html"><img src="images/logo_008c.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="http://product.dangdang.com/23764636.html">Android群英传</a></span>
+                </li>
+
+
+                <li class="four" id="logo_008"><a href="http://product.dangdang.com/23764636.html"><img src="images/logo_009c.png" width="240"
+                                                                                                        height="120" alt=""></a><span><a
+                        href="http://product.dangdang.com/23764636.html">Android艺术探索</a></span>
+                </li>
+
+
+                <li id="logo_010"><a href="http://product.dangdang.com/23837163.html"><img src="images/logo_010c.png" width="240"
+                                                                      height="120" alt=""></a><span><a
+                        href="http://product.dangdang.com/23837163.html">Android源代码分析</a></span></li>
+                <li id="logo_011"><a href="https://futurestud.io/books/retrofit"><img src="images/logo_011c.png" width="240"
+                                                                          height="120" alt=""></a><span><a
+                        href="https://futurestud.io/books/retrofit">retrofit</a></span></li>
+                <li class="four" id="logo_012"><a href="http://reactnative.cn/"><img src="images/logo_012c.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a
+                        href="http://reactnative.cn/">RN系列</a></span></li>
+                <li class="one" id="logo_013"><a href="http://www.androidweekly.cn/"><img src="images/logo_013c.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a
+                        href="http://www.androidweekly.cn/">开发周报</a></span></li>
+                <li id="logo_014"><a href="http://mp.weixin.qq.com/s?__biz=MzI1MTA1MzM2Nw==&mid=400118620&idx=1&sn=b4fdd5055731290eef12ad0d17f39d4a&scene=0"><img src="images/logo_014c.png" width="240"
+                                                                          height="120" alt=""></a><span><a
+                        href="http://mp.weixin.qq.com/s?__biz=MzI1MTA1MzM2Nw==&mid=400118620&idx=1&sn=b4fdd5055731290eef12ad0d17f39d4a&scene=0">热补丁</a></span></li>
+                <li id="logo_015"><a href="http://gank.io/post/560e15be2dca930e00da1083"><img src="images/logo_015c.png" width="240"
+                                                                           height="120" alt=""></a><span><a
+                        href="http://gank.io/post/560e15be2dca930e00da1083">rxjava</a></span></li>
+                <li class="four" id="logo_016"><a href="weixin.htm"><img src="images/logo_jishu.png"
+                                                                                    width="240" height="120" alt=""></a><span><a
+                        href="weixin.htm">技术公众号</a></span></li>
+            </ul>
+        </dd>
+
+        <dd style="display:none;">
+            <!--音乐视频网站-->
+            <ul>
+                <li class="one" id="logo_001"><a href="http://douban.fm/"><img src="images/logo_015d.png"
+                                                                                             width="240" height="120"
+                                                                                             alt=""></a><span><a
+                        href="#">豆瓣FM</a></span></li>
+                <li id="logo_002"><a href="http://music.163.com/"><img src="images/logo_002d.png" width="240"
+                                                                               height="120" alt="JJ比赛"></a><span><a
+                        href="#">网易云音乐</a></span></li>
+                <li id="logo_003"><a href="http://y.qq.com/"><img src="images/logo_003d.png" width="240"
+                                                                                       height="120" alt=""></a><span><a
+                        href="#">QQ音乐</a></span></li>
+                <li class="four" id="logo_004"><a href="http://music.baidu.com/?from=new_mp3"><img src="images/logo_001d.png"
+                                                                                   width="240" height="120"
+                                                                                   alt="百度音乐"></a><span><a href="#">百度音乐</a></span>
+                </li>
+                <li class="one" id="logo_005"><a href="http://www.kugou.com/"><img
+                        src="images/logo_kugou.png" width="240" height="120" alt=""></a><span><a href="#">酷狗音乐</a></span>
+                </li>
+                <li id="logo_006"><a href="http://www.acfun.tv/"><img src="images/logo_006d.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="#">A站</a></span></li>
+                <li id="logo_007"><a href="http://www.bilibili.com/"><img src="images/logo_007d.png" width="240" height="120"
+                                                                     alt=""></a><span><a href="#">B站</a></span></li>
+                <li class="four" id="logo_008"><a href="http://www.douyu.com/"><img src="images/logo_008d.png" width="240"
+                                                                                  height="120" alt=""></a><span><a
+                        href="#">斗鱼</a></span></li>
+                <li class="one" id="logo_009"><a href="http://www.tuhao13.com/"><img src="images/logo_009d.png"
+                                                                                      width="240" height="120"
+                                                                                      alt=""></a><span><a href="#">土豪网</a></span>
+                </li>
+                <li id="logo_010"><a href="http://www.tudou.com/"><img src="images/logo_tudou.png" width="240"
+                                                                       height="120" alt=""></a><span><a href="#">土豆</a></span>
+                </li>
+                <li id="logo_011"><a href="http://tv.sohu.com/"><img src="images/logo_souhu.png" width="240"
+                                                                              height="120" alt=""></a><span><a href="#">搜狐视频</a></span>
+                </li>
+                <li class="four" id="logo_012"><a href="http://www.panda.tv/"><img src="images/logo_panda.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a href="#">熊猫tv</a></span>
+                </li>
+                <li class="one" id="logo_013"><a href="http://www.le.com/index.html"><img src="images/logo_leshi.png"
+                                                                                            width="240" height="120"
+                                                                                            alt=""></a><span><a
+                        href="#">乐视</a></span></li>
+                <li id="logo_014"><a href="http://www.iqiyi.com/"><img src="images/logo_aiqiyi.png" width="240"
+                                                                         height="120" alt=""></a><span><a
+                        href="#">爱奇艺</a></span></li>
+                <li id="logo_015"><a href="http://www.youku.com/"><img src="images/logo_youku.png" width="240" height="120"
+                                                                   alt=""></a><span><a href="#">优酷</a></span></li>
+                <li class="four" id="logo_016"><a href="http://v.qq.com/"><img src="images/logo_tengxun.png"
+                                                                                     width="240" height="120"
+                                                                                     alt=""></a><span><a
+                        href="#">腾讯视频</a></span></li>
+            </ul>
+        </dd>
+        <dd style="display:none;">
+            <!--跳槽恋爱http://www.nowcoder.com/contestRoom-->
+            <ul>
+                <li class="one" id="logo_007"><a href="http://www.nowcoder.com/contestRoom"><img src="images/logo_007e.png" width="240" height="120"
+                                                                                     alt=""></a><span><a href="#">牛客网</a></span></li>
+                <li class="four" id="logo_001"><a href="http://www.zhaopin.com/"><img src="images/logo_016f.png"
+                                                                                       width="240" height="120" alt=""></a><span><a
+                        href="#">智联招聘</a></span></li>
+                <li style="margin-left: 6px" id="logo_002"> <a href="http://www.51job.com/"><img src="images/logo_002e.png" width="240" height="120"
+                                                                alt="前程无忧"></a><span><a href="#">前程无忧</a></span></li>
+                <li class="four" id="logo_003"><a href="http://www.lagou.com/"><img src="images/logo_003e.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="">拉钩网</a></span></li>
+                <li class="one" id="logo_004"><a href="https://www.liepin.com/"><img
+                        src="images/logo_001e.png" width="240" height="120" alt="猎聘网"></a><span><a
+                        href="#">猎聘网</a></span></li>
+                <li class="four" id="logo_005"><a
+                        href="http://www.chinahr.com/tianjin/"><img
+                        src="images/logo_005e.png" width="240" height="120" alt=""></a><span><a href="#">中华英才</a></span>
+                </li>
+                <li style="margin-left: 6px" id="logo_006"><a href="http://blog.jobbole.com/"><img src="images/logo_006e.png" width="240" height="120"
+                                                                   alt=""></a><span><a href="#">伯乐在线</a></span></li>
+
+
+                <li class="four" id="logo_012"><a href="http://www.dajie.com/"><img src="images/logo_dajie.png"
+                                                                                    width="240" height="120"
+                                                                                    alt=""></a><span><a href="#">大街网</a></span>
+                </li>
+                <li class="one" id="logo_013"><a
+                        href="http://job.csdn.net/"><img
+                        src="images/logo_csdn.png" width="240" height="120" alt=""></a><span><a href="#">CSDN招聘</a></span>
+                </li>
+                <li id="logo_014"><a href="http://www.neitui.me/"><img src="images/logo_neitui.png" width="240" height="120"
+                                                                       alt=""></a><span><a href="#">内推网</a></span></li>
+                <li id="logo_015"><a href="https://100offer.com/"><img src="images/logo_100offer.png" width="240"
+                                                                       height="120" alt=""></a><span><a
+                        href="https://100offer.com/">100offer</a></span></li>
+                <li class="four" id="logo_016"><a href="http://www.wealink.com/"><img src="images/logo_ruolin.png"
+                                                                                      width="240" height="120" alt=""></a><span><a
+                        href="#">若邻网</a></span></li>
+
+                <li class="one" id="logo_008"><a
+                        href="http://www.zhenai.com/"><img
+                        src="images/logo_008e.png" width="240" height="120" alt=""></a><span><a
+                        href="http://www.zhenai.com/">珍爱网</a></span></li>
+                <li class="four" id="logo_009"><a
+                        href="http://www.vipbaihe.com/"><img
+                        src="images/logo_009e.png" width="240" height="120" alt=""></a><span><a
+                        href="#">百合网</a></span></li>
+                <li style="margin-left: 6px" id="logo_010"><a href="http://www.youyuan.com/"><img src="images/logo_010e.png" width="240"
+                                                                      height="120" alt=""></a><span><a href="#">有缘网</a></span>
+                </li>
+                <li id="logo_011"><a href="http://www.jiayuan.com/"><img src="images/logo_011e.png" width="240" height="120"
+                                                                  alt=""></a><span><a
+                        href="http://www.jiayuan.com/">世纪佳缘</a></span></li>
+
+            </ul>
+        </dd>
+        <dd style="display:none;">
+            <!--创业社区-->
+            <ul>
+                <li class="one" id="logo_001"><a href="http://geekniu.com/"><img src="images/logo_jiniu.png"
+                                                                                      width="240" height="120"
+                                                                                      alt=""></a><span><a href="#">极牛</a></span>
+                </li>
+                <li id="logo_002"><a href="http://www.ycpai.com/"><img src="images/logo_yuanchuangpai.png" width="240"
+                                                                       height="120" alt="缘创派"></a><span><a
+                        href="#">缘创派</a></span></li>
+                <li id="logo_003"><a href="http://www.cyzone.cn/"><img src="images/logo_003f.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="http://www.cyzone.cn/">创业邦</a></span></li>
+                <li class="four" id="logo_004"><a href="http://www.yixieshi.com/"><img src="images/logo_hulianwangyixieshi.png"
+                                                                                     width="240" height="120"
+                                                                                     alt=""></a><span><a
+                        href="#">互联网一些事</a></span></li>
+
+                <li id="logo_006" class="one"><a href="https://mart.coding.net/projects"><img src="images/logo_mashi.png" width="240"
+                                                                          height="120" alt=""></a><span><a
+                        href="#">码市</a></span></li>
+                <li id="logo_007" class="four"><a href="http://shixian.com/"><img src="images/logo_shixian.png" width="240"
+                                                                              height="120" alt=""></a><span><a href="#">实现</a></span>
+                </li>
+
+
+                <li style="margin-left: 6px" id="logo_008" ><a href="http://tieba.baidu.com/"><img src="images/logo_baidutieba.png" width="240"
+                                                                                  height="120" alt=""></a><span><a href="#">百度贴吧</a></span>
+                </li>
+
+
+
+                <li class="four" id="logo_009"><a href="http://www.tianya.cn/"><img src="images/logo_009f.png" width="240"
+                                                                                  height="120" alt=""></a><span><a
+                        href="http://www.tianya.cn/">天涯</a></span></li>
+                <li id="logo_010" class ="one"><a href="http://www.zhihu.com/"><img src="images/logo_010f.png" width="240"
+                                                                       height="120" alt=""></a><span><a
+                        href="#">知乎</a></span></li>
+                <li id="logo_011"><a href="http://www.guokr.com/"><img src="images/logo_011f.png" width="240"
+                                                                         height="120" alt=""></a><span><a
+                        href="#">果壳</a></span></li>
+                <li class="four" id="logo_012"><a href="http://www.infoq.com/"><img src="images/logo_012f.png" width="240"
+                                                                                  height="120" alt=""></a><span><a
+                        href="#">InfoQ</a></span></li>
+
+                <li style="margin-left: 6px" id="logo_014"><a href="http://www.iheima.com/"><img src="images/logo_014f.png" width="240"
+                                                                        height="120" alt=""></a><span><a
+                        href="#">i黑马</a></span></li>
+                <li class="one" id="logo_013"><a href="http://36kr.com"><img src="images/logo_36kr.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a href="#">36kr</a></span>
+                </li>
+
+                <li id="logo_015"><a href="http://cy.ncss.org.cn/"><img src="images/logo_daxuesheng.png" width="240"
+                                                                       height="120" alt=""></a><span><a
+                        href="#">大学生创业网</a></span></li>
+                <li class="four" id="logo_016"><a href="https://www.itjuzi.com/"><img src="images/logo_itjuzi.png"
+                                                                                        width="240" height="120"
+                                                                                        alt="google"></a><span><a
+                        href="https://www.itjuzi.com/">IT橘子</a></span></li>
+
+                <li class="four" id="logo_005"><a href="http://www.iyiou.com/"><img src="images/logo_yiou.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a href="#">亿欧网</a></span>
+                </li>
+            </ul>
+        </dd>
+        <dd style="display:none;">
+            <!--其他-->
+            <ul>
+                <li class="one" id="logo_001"><a href="http://www.zhuangbi.info/"><img src="images/logo_baobao.png"
+                                                                                      width="240" height="120"
+                                                                                      alt=""></a><span><a href="#">装逼图片</a></span>
+                </li>
+                <li id="logo_002"><a href="http://www.bibb.cn/"><img src="images/logo_002f.png" width="240"
+                                                                       height="120" alt="装逼宝典"></a><span><a
+                        href="#">装逼宝典</a></span></li>
+                <li id="logo_003"><a href="https://www.calm.com/"><img src="images/logo_004f.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="https://www.calm.com/">减压网站</a></span></li>
+                <li class="four" id="logo_004"><a href="http://zhidao.baidu.com/s/daily/2013-11-24/1387540950.html"><img src="images/logo_zhiyijinzhui.png"
+                                                                                     width="240" height="120"
+                                                                                     alt=""></a><span><a
+                        href="#">注意颈椎</a></span></li>
+                <li class="one" id="logo_005"><a href="http://www.muscles.com.cn/"><img src="images/logo_biewangduanlian.png"
+                                                                                   width="240" height="120"
+                                                                                   alt=""></a><span><a href="#">别忘锻炼</a></span>
+                </li>
+                <li id="logo_006"><a href="http://www.itlanbao.com/"><img src="images/logo_xiaoguodaquan.png" width="240"
+                                                                          height="120" alt=""></a><span><a
+                        href="#">安卓效果大全</a></span></li>
+                <li id="logo_007"><a href="http://www.devstore.cn/code/list/pn1-or0.html"><img src="images/logo_yuanma.png" width="240"
+                                                                              height="120" alt=""></a><span><a href="#">源码下载</a></span>
+                </li>
+                <li class="four" id="logo_008"><a href="http://www.jianshu.com/p/1e402922ee32/"><img src="images/logo_markdown.png" width="240"
+                                                                                 height="120" alt=""></a><span><a
+                        href="#">MarkDown语法</a></span></li>
+                <li class="one" id="logo_009"><a href="http://wiki.jikexueyuan.com/project/material-design/"><img src="images/logo_mdfg.png" width="240"
+                                                                                  height="120" alt=""></a><span><a
+                        href="http://wiki.jikexueyuan.com/project/material-design/">md设计</a></span></li>
+                <li id="logo_010"><a href="http://tool.php100.com/"><img src="images/logo_chengxuyuanbibei.png" width="240"
+                                                                       height="120" alt=""></a><span><a
+                        href="#">程序员必备工具</a></span></li>
+                <li id="logo_011"><a href="http://www.php100.com/html/webkaifa/Linux/2009/1106/3485.html"><img src="images/logo_linux.png" width="240"
+                                                                         height="120" alt=""></a><span><a
+                        href="#">linux命令大全</a></span></li>
+                <li class="four" id="logo_012"><a href="http://www.geekpark.net/"><img src="images/logo_jikegongyuan.png" width="240"
+                                                                                  height="120" alt=""></a><span><a
+                        href="#">极客公园</a></span></li>
+                <li class="one" id="logo_013"><a href="http://www.lovepua.com/"><img src="images/logo_bamei.png" width="240"
+                                                                                height="120"
+                                                                                alt=""></a><span><a
+                        href="#">把妹技术</a></span></li>
+                <li id="logo_014"><a href="http://androidpixels.net/"><img src="images/logo_dppx.png" width="240"
+                                                                      height="120" alt=""></a><span><a
+                        href="#">DP转PX</a></span></li>
+                <li id="logo_015"><a href="http://www.android-studio.org/"><img src="images/logo_as.png" width="240"
+                                                                       height="120" alt=""></a><span><a
+                        href="#">AndroidStudio教程</a></span></li>
+                <li class="four" id="logo_016"><a href="http://gank.io/"><img src="images/logo_ganhuo.png"
+                                                                                        width="240" height="120"
+                                                                                        alt="google"></a><span><a
+                        href="Http://ImWWile.Com">干货集中营</a></span></li>
+            </ul>
+        </dd>
+    </dl>
+
+
+</div>
+    <!--<script>-->
+        <!--$(function() {-->
+            <!--var search_form = $('#search_form');-->
+            <!--var search_input = $('#search_input');-->
+            <!--var baidu_submit = $('#baidu_submit');-->
+            <!--var google_submit = $('#google_submit');-->
+
+            <!--search_form.submit(function(e) {-->
+                <!--e.preventDefault();-->
+                <!--baidu_submit.click();-->
+            <!--});-->
+
+            <!--baidu_submit.click(function() {-->
+                <!--var keyword = search_input.val();-->
+                <!--if (typeof keyword === 'undefined' || keyword == '') return;-->
+                <!--var url = 'https://www.baidu.com/s?wd=';-->
+                <!--window.open(url + keyword);-->
+            <!--});-->
+
+            <!--google_submit.click(function() {-->
+                <!--var keyword = search_input.val();-->
+                <!--if (typeof keyword === 'undefined' || keyword == '') return;-->
+                <!--var url = 'https://www.google.com/search?q=';-->
+                <!--window.open(url + keyword);-->
+            <!--})-->
+        <!--});-->
+    <!--</script>-->
+</span>
+<div  style="color: #fff" id='floot'><a style="color: #ffffff " href='about.htm' target='_blank'>关于</a> | <a style="color: #ffffff " href='https://www.getlantern.org/' target="_blank" >翻墙工具</a> | <a style="color: #ffffff " href='jiuban.html' >打开旧版</a></div>
+
+</body>
+</html>
